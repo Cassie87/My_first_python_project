@@ -1,0 +1,25 @@
+import random
+Greeting = "Welcome to Cassie's Dice Game!\n"
+print(Greeting)
+question = "Do you want to roll the dice?\n"
+input(question)
+player_1 = "You:"
+computer = "Comp:"
+min = 1
+max = 6
+roll_again = "yes"
+no_roll = "no"
+Fun = "Have Fun!"
+while roll_again == "yes" or roll_again == "y":
+    print(Fun)
+    print("Rolling the dice.\n")
+    print("And the numbers are..\n")
+    print(player_1)
+    print(random.randint(min,max))
+    print(computer)
+    print(random.randint(min,max))
+    roll_again = input("Roll again?\n")
+while no_roll == "no" or no_roll == "n":
+    print("Have a great day!\n")
+    print("Thank you for stopping by!\n")
+    no_roll = input ("This dice game is Cassie's first python project!\n")
